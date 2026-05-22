@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dog do Bairro | Hot Dogs Artesanais</title>
+  <title>Delícias da Vila | Doces & Salgados</title>
 
   <style>
     :root{
-      --primary: #8b1e1e;
-      --secondary: #d62828;
-      --accent: #f4a261;
-      --light: #faf7f2;
-      --dark: #222;
+      --primary: #8b2e3c;
+      --secondary: #d96c75;
+      --light: #fff8f5;
+      --dark: #2d2d2d;
       --gray: #666;
-      --white: #fff;
+      --white: #ffffff;
       --shadow: 0 10px 25px rgba(0,0,0,0.08);
       --radius: 18px;
     }
@@ -56,10 +55,10 @@
     }
 
     h2{
-      text-align:center;
-      color:var(--primary);
       font-size:2rem;
       margin-bottom:20px;
+      text-align:center;
+      color:var(--primary);
     }
 
     .section-text{
@@ -72,23 +71,21 @@
     /* HERO */
 
     .hero{
+      background:
+      linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
+      url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+
       min-height:100vh;
       display:flex;
       align-items:center;
       justify-content:center;
       text-align:center;
       color:var(--white);
-
-      background:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://images.unsplash.com/photo-1619740455993-9e612b1af08a?q=80&w=1400&auto=format&fit=crop')
-      center/cover no-repeat;
-
       padding:40px 20px;
     }
 
     .hero-content{
-      max-width:750px;
+      max-width:700px;
     }
 
     .hero h1{
@@ -98,13 +95,13 @@
 
     .hero p{
       font-size:1.1rem;
-      color:#f1f1f1;
       margin-bottom:30px;
+      color:#f1f1f1;
     }
 
     .btn{
       display:inline-block;
-      background:var(--secondary);
+      background:var(--primary);
       color:var(--white);
       padding:15px 28px;
       border-radius:999px;
@@ -114,7 +111,7 @@
     }
 
     .btn:hover{
-      background:#b61f1f;
+      background:#732331;
       transform:translateY(-2px);
     }
 
@@ -139,16 +136,12 @@
     }
 
     .menu-content{
-      padding:20px;
+      padding:22px;
     }
 
     .menu-content h3{
       color:var(--primary);
       margin-bottom:10px;
-    }
-
-    .menu-content p{
-      color:var(--gray);
     }
 
     .price{
@@ -171,8 +164,8 @@
     }
 
     .about-box p{
-      margin-bottom:15px;
       color:var(--gray);
+      margin-bottom:15px;
     }
 
     /* INFO */
@@ -196,8 +189,8 @@
     }
 
     .info-card p{
-      color:var(--gray);
       margin-bottom:10px;
+      color:var(--gray);
     }
 
     /* MAPA */
@@ -244,17 +237,17 @@
 
     .whatsapp-float{
       position:fixed;
-      bottom:20px;
       right:20px;
+      bottom:20px;
       width:60px;
       height:60px;
-      border-radius:50%;
       background:#25d366;
-      color:#fff;
+      border-radius:50%;
       display:flex;
       align-items:center;
       justify-content:center;
       font-size:30px;
+      color:#fff;
       box-shadow:0 10px 25px rgba(0,0,0,0.2);
       z-index:999;
       transition:0.3s;
@@ -284,6 +277,7 @@
         grid-template-columns:repeat(2, 1fr);
       }
     }
+
   </style>
 </head>
 <body>
@@ -294,12 +288,11 @@
 
     <div class="hero-content">
 
-      <h1>Dog do Bairro</h1>
+      <h1>Delícias da Vila</h1>
 
       <p>
-        Hot dogs artesanais preparados na hora,
-        com ingredientes selecionados e aquele sabor
-        clássico que conquista no primeiro pedido.
+        Doces e salgados preparados diariamente com sabor caseiro,
+        ingredientes frescos e aquele toque especial que conquista clientes.
       </p>
 
       <a
@@ -307,7 +300,7 @@
         target="_blank"
         class="btn"
       >
-        Peça pelo WhatsApp
+        Faça seu pedido pelo WhatsApp
       </a>
 
     </div>
@@ -320,11 +313,11 @@
 
     <div class="container">
 
-      <h2>Nosso Cardápio</h2>
+      <h2>Mais Pedidos</h2>
 
       <p class="section-text">
-        Combinações preparadas diariamente com pão macio,
-        salsicha premium e ingredientes frescos.
+        Produtos preparados com cuidado para atender festas,
+        cafés da tarde e pedidos do dia a dia.
       </p>
 
       <div class="menu-grid">
@@ -334,20 +327,22 @@
         <div class="menu-card">
 
           <img
-            src="https://images.unsplash.com/photo-1612392062798-2b4f6b6e1b2d?q=80&w=1000&auto=format&fit=crop"
-            alt="Hot Dog Tradicional"
-          />
+            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000&auto=format&fit=crop"
+            alt="Coxinha"
+          >
 
           <div class="menu-content">
 
-            <h3>Dog Tradicional</h3>
+            <h3>Coxinha Cremosa</h3>
 
             <p>
-              Salsicha premium, purê de batata,
-              milho, batata palha e molho especial da casa.
+              Massa leve, recheio generoso de frango temperado
+              e catupiry cremoso.
             </p>
 
-            <div class="price">R$ 18,90</div>
+            <div class="price">
+              R$ 8,50
+            </div>
 
           </div>
 
@@ -358,20 +353,22 @@
         <div class="menu-card">
 
           <img
-            src="https://images.unsplash.com/photo-1550317138-10000687a72b?q=80&w=1000&auto=format&fit=crop"
-            alt="Hot Dog Bacon"
-          />
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1000&auto=format&fit=crop"
+            alt="Brigadeiros"
+          >
 
           <div class="menu-content">
 
-            <h3>Dog Bacon Cheddar</h3>
+            <h3>Brigadeiro Gourmet</h3>
 
             <p>
-              Salsicha artesanal, cheddar cremoso,
-              bacon crocante e cebola caramelizada.
+              Chocolate intenso, textura cremosa
+              e finalização artesanal.
             </p>
 
-            <div class="price">R$ 24,90</div>
+            <div class="price">
+              R$ 4,50
+            </div>
 
           </div>
 
@@ -382,20 +379,22 @@
         <div class="menu-card">
 
           <img
-            src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?q=80&w=1000&auto=format&fit=crop"
-            alt="Hot Dog Especial"
-          />
+            src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?q=80&w=1000&auto=format&fit=crop"
+            alt="Mini salgados"
+          >
 
           <div class="menu-content">
 
-            <h3>Dog Especial da Casa</h3>
+            <h3>Mini Salgados Festa</h3>
 
             <p>
-              Duas salsichas, queijo gratinado,
-              vinagrete fresco e molho artesanal.
+              Variedade de sabores preparados diariamente,
+              ideais para eventos e confraternizações.
             </p>
 
-            <div class="price">R$ 29,90</div>
+            <div class="price">
+              R$ 89,90 / cento
+            </div>
 
           </div>
 
@@ -418,15 +417,14 @@
       <div class="about-box">
 
         <p>
-          O Dog do Bairro nasceu com a proposta de oferecer
-          hot dogs preparados com cuidado, ingredientes frescos
-          e atendimento rápido para toda a região.
+          A Delícias da Vila começou como uma pequena produção familiar
+          para atender amigos e vizinhos da região.
         </p>
 
         <p>
-          Nosso diferencial está na combinação de receitas clássicas,
-          molhos exclusivos e preparo artesanal que garante sabor
-          e qualidade em cada pedido.
+          Hoje, seguimos com o mesmo cuidado artesanal,
+          oferecendo doces e salgados frescos todos os dias,
+          com atendimento próximo e entregas rápidas.
         </p>
 
       </div>
@@ -441,20 +439,20 @@
 
     <div class="container">
 
-      <h2>Localização</h2>
+      <h2>Onde Estamos</h2>
 
       <p class="section-text">
-        Atendimento presencial e delivery em uma localização
-        de fácil acesso na cidade.
+        Atendimento presencial e retirada de pedidos
+        em uma localização de fácil acesso.
       </p>
 
       <div class="map-container">
 
         <iframe
-          src="https://www.google.com/maps?q=Rua+Augusta,+São+Paulo&output=embed"
+          src="https://www.google.com/maps?q=Rua+das+Flores,+250,+São+Paulo&output=embed"
           loading="lazy"
-          allowfullscreen="">
-        </iframe>
+          allowfullscreen=""
+        ></iframe>
 
       </div>
 
@@ -462,7 +460,7 @@
 
   </section>
 
-  <!-- HORÁRIOS E CONTATO -->
+  <!-- HORÁRIO E CONTATO -->
 
   <section>
 
@@ -470,15 +468,14 @@
 
       <div class="info-grid">
 
-        <!-- HORÁRIOS -->
+        <!-- HORÁRIO -->
 
         <div class="info-card">
 
           <h3>Horários de Funcionamento</h3>
 
-          <p><strong>Terça a Quinta:</strong> 18h às 23h</p>
-          <p><strong>Sexta e Sábado:</strong> 18h à 01h</p>
-          <p><strong>Domingo:</strong> 18h às 22h</p>
+          <p><strong>Segunda a Sábado:</strong> 09h às 20h</p>
+          <p><strong>Domingo:</strong> 09h às 14h</p>
 
         </div>
 
@@ -488,9 +485,9 @@
 
           <h3>Contato</h3>
 
-          <p><strong>Telefone:</strong> (11) 4002-3000</p>
+          <p><strong>Telefone:</strong> (11) 3456-7890</p>
           <p><strong>WhatsApp:</strong> (11) 99999-9999</p>
-          <p><strong>E-mail:</strong> contato@dogdobairro.com.br</p>
+          <p><strong>E-mail:</strong> contato@deliciasdavila.com.br</p>
 
         </div>
 
@@ -511,7 +508,7 @@
     </div>
 
     <p>
-      © 2026 Dog do Bairro — Todos os direitos reservados.
+      © 2026 Delícias da Vila — Todos os direitos reservados.
     </p>
 
   </footer>
@@ -529,14 +526,16 @@
 
   <script>
 
-    // Feedback simples ao clicar no WhatsApp
+    // Feedback simples no clique
 
     const whatsappButtons = document.querySelectorAll('a[href*="wa.me"]');
 
     whatsappButtons.forEach(button => {
 
       button.addEventListener('click', () => {
+
         console.log('Abrindo WhatsApp...');
+
       });
 
     });
